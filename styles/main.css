@@ -1,0 +1,45 @@
+.nav {
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	background-color: #555;
+}
+
+.nav-container {
+	display:block;
+	width:90%;
+	margin-right:auto;
+	margin-left:auto;
+	overflow:auto;
+}
+
+#logo {
+	float:left;
+	width:80px;
+	height:80px;
+}
+
+.nav a {
+	float: left;
+	margin-top:40px;
+	margin-left:40px;
+	display: inline;
+	color: red;
+	text-align: center;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #000;
+}
+
+#login {
+	float: right;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
