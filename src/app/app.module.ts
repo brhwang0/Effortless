@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NavComponent } from './nav/nav.component';
 import { MainComponent } from './main/main.component';
+import { SlideshowComponent } from './slideshow/slideshow.component';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     NavComponent,
-    MainComponent
+    MainComponent,
+    SlideshowComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule
