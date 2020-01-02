@@ -5,6 +5,7 @@
 **Overall Main Page Design**
   
   #### Slideshow
+    - Rework slideshow to something similar to the demo [here](https://onehungrymind.com/angular-animations-intro/).
     - Add fade animation to slideshow.
     - Add functionability to pause slideshow on mouse hover.
   #### Info
