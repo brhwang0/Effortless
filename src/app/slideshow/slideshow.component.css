@@ -1,37 +1,18 @@
 .slideshow {
+	height:500px;
 	background-color:#DEF2F1;
-	border:solid;
 	overflow:hidden;
 }
 
-.slideshow-container {
-	max-width:1000px;
-	padding:20px;
+.slide {
+	max-height:100%;
 }
 
-.slide {
-	display:flex;
-	width:1000px;
-	align-items:center;
+.slide img {
+	width:70%;
 }
 
 .slide .caption {
-	padding: 20px;
-	width:50%;
-}
-
-.info {
-	border-style:solid;
-}
-
-.users {
-	border-style:solid;
-}
-
-.features {
-	border-style:solid;
-}
-
-.startnow {
-	border-style:solid;
+	width:30%;
+	padding:20px;
 }
