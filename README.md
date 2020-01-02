@@ -12,7 +12,7 @@
   #### Patient, Doctor, Insurance
     - Add skeleton for how our app helps patients, doctors, and insurances specifically.
   #### Features
-    - Add skeleton for features
+    - Add skeleton for features.
 
 **Login Page**
   - Implement workable login page.
