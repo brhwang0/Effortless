@@ -16,7 +16,7 @@ export class SlideshowComponent implements OnInit {
     function showSlides(n) {
       setTimeout(showSlides, 2000); // Change image every 2 seconds
       var i;
-      var slides = document.getElementsByClassName("slide");
+      var slides = document.getElementsByClassName("slide") as HTMLCollectionOf<HTMLElement>;
 
       if (slideIndex > slides.length) {
         slideIndex = 1;
