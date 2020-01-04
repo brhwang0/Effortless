@@ -1,14 +1,12 @@
 <section class="slideshow">
 
-  <div class="slide">
-     <div [@slideAnimation]="currentIndex">
-       <ng-template ngFor [ngForOf]="slides" let-slide let-i="index">
-         <img class="slide-image"
-              *ngIf="isCurrentSlideIndex(i)"
-              (swiperight)="nextSlide()" (swipeleft)="prevSlide()"
-              [src]="slide.image">
-       </ng-template>
-     </div>
+  <div class="slide-img" [@slideAnimation]="currentIndex">
+    <ng-template ngFor [ngForOf]="slides" let-slide let-i="index">
+      <img
+        *ngIf="isCurrentSlideIndex(i)"
+        (swiperight)="nextSlide()" (swipeleft)="prevSlide()"
+        [src]="slide.image">
+    </ng-template>
 
      <button class="arrow prev" (click)="nextSlide()"></button>
      <button class="arrow next" (click)="prevSlide()"></button>
