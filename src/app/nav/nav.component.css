@@ -1,14 +1,8 @@
 .nav {
-	position:fixed;
 	height:80px;
-	left:0;
-	top:0;
-	right:0;
-	background-color: #555;
 }
 
 .nav-container {
-	display:block;
 	width:90%;
 	margin-right:auto;
 	margin-left:auto;
@@ -26,14 +20,15 @@
 	margin-top:40px;
 	margin-left:40px;
 	display: inline;
-	color: red;
+	color: black;
 	text-align: center;
 	padding: 10px 20px;
 	text-decoration: none;
+	opacity:0.8;
 }
 
 .nav a:hover {
-  background-color: #000;
+  color: grey;
 }
 
 #login {

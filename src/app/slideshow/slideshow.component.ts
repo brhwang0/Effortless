@@ -7,35 +7,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlideshowComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function showSlides(n) {
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
-      var i;
-      var slides = document.getElementsByClassName("slide") as HTMLCollectionOf<HTMLElement>;
-
-      if (slideIndex > slides.length) {
-        slideIndex = 1;
-      }
-
-      if (slideIndex < 1) {
-        slideIndex = slides.length
-      }
-
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-
-      slides[slideIndex-1].style.display = "flex";
-      slideIndex++;
-    }
-
+  constructor() {
+    this.preloadImages();
   }
 
+  ngOnInit() {
+  }
+
+  currentIndex = 0;
+  slides = [
+    {image: 'assets/images/slide-icons.png'},
+    {image: 'assets/images/slide-people.jpg'},
+  ];
+
+  preloadImages() {
+    this.slides.forEach(slide => {
+      (new Image()).src = slide.image;
+    });
+  }
+
+  setCurrentSlideIndex(index) {
+    this.currentIndex = index;
+  }
+
+  isCurrentSlideIndex(index) {
+    return this.currentIndex === index;
+  }
+
+  prevSlide() {
+    this.currentIndex = (this.currentIndex < this.slides.length - 1) ? ++this.currentIndex : 0;
+  }
+
+  nextSlide() {
+    this.currentIndex = (this.currentIndex > 0) ? --this.currentIndex : this.slides.length - 1;
+  }
 
 
 }
