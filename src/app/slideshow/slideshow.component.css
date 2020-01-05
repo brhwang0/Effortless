@@ -1,12 +1,12 @@
 .slideshow {
 	height:500px;
 	background-color:#DEF2F1;
-	overflow:hidden;
 }
 
 .slide-img {
 	height:100%;
-	width:70%
+	width:70%;
+	float:left;
 }
 
 .slide-img img {
@@ -16,7 +16,7 @@
 
 .slide-caption {
 	width:30%;
-	padding:20px;
+	float:right;
 }
 
 .arrow {
@@ -28,14 +28,14 @@
 
 .arrow.prev {
 	top: 50%;
-  opacity: 0.5;
+  opacity: 0.8;
   left: 20px;
   transition: 0.2s linear all;
 }
 
 .arrow.next {
 	top: 50%;
-  opacity: 0.5;
+  opacity: 0.8;
   right: 20px;
   transition: 0.2s linear all;
 }
