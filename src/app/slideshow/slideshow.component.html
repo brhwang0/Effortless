@@ -2,7 +2,7 @@
 
   <div class="slide-img" [@slideAnimation]="currentIndex">
     <ng-template ngFor [ngForOf]="slides" let-slide let-i="index">
-      <img
+      <img class="slide slide-animation nonDraggableImage"
         *ngIf="isCurrentSlideIndex(i)"
         (swiperight)="nextSlide()" (swipeleft)="prevSlide()"
         [src]="slide.image">
