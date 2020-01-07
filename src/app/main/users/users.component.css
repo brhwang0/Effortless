@@ -1,0 +1,8 @@
+.users-container {
+  display:block;
+  padding: 20px;
+  height: 300px;
+  border-radius: 20px;
+
+  background-color: lightgrey
+}

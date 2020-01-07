@@ -4,7 +4,7 @@ export const slideAnimation = trigger('slideAnimation', [
   transition(':increment', group([
     query(':enter', [
       style({
-        opacity:0,
+        display:'none',
         transform: 'translateX(100%)'
       }),
       animate('0.5s ease-out', style('*'))
@@ -19,7 +19,7 @@ export const slideAnimation = trigger('slideAnimation', [
   transition(':decrement', group([
     query(':enter', [
       style({
-        opacity:0,
+        display:'none',
         transform: 'translateX(-100%)'
       }),
       animate('0.5s ease-out', style('*'))

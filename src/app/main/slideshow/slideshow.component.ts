@@ -16,8 +16,8 @@ export class SlideshowComponent implements OnInit {
 
   currentIndex = 0;
   slides = [
-    {image: 'assets/images/slide-icons.png', description: 'Image 00'},
-    {image: 'assets/images/slide-people.jpg', description: 'Image 01'},
+    {image: 'assets/images/slide-icons.png'},
+    {image: 'assets/images/slide-people.jpg'},
   ];
 
   preloadImages() {
