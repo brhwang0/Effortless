@@ -9,6 +9,7 @@ import { MainComponent } from './main/main.component';
 import { SlideshowComponent } from './main/slideshow/slideshow.component';
 import { InfoComponent } from './main/info/info.component';
 import { UsersComponent } from './main/users/users.component';
+import { FeaturesComponent } from './main/features/features.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UsersComponent } from './main/users/users.component';
     MainComponent,
     SlideshowComponent,
     InfoComponent,
-    UsersComponent
+    UsersComponent,
+    FeaturesComponent
   ],
   imports: [
     BrowserModule,
