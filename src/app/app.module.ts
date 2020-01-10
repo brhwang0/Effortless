@@ -13,6 +13,7 @@ import { SlideshowComponent } from './main/slideshow/slideshow.component';
 import { InfoComponent } from './main/info/info.component';
 import { UsersComponent } from './main/users/users.component';
 import { FeaturesComponent } from './main/features/features.component';
+import { StartComponent } from './main/start/start.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FeaturesComponent } from './main/features/features.component';
     SlideshowComponent,
     InfoComponent,
     UsersComponent,
-    FeaturesComponent
+    FeaturesComponent,
+    StartComponent
   ],
   imports: [
     AppRoutingModule,

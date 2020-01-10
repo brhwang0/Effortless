@@ -1,0 +1,21 @@
+.start-container {
+  position:relative;
+  display:block;
+  padding: 20px;
+  height: 300px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.start-button {
+  height: 46px;
+
+  position: absolute;
+  top: 50%;
+
+  border: none;
+  border-radius: 2px;
+  background-color: #b52e31;
+  color: white;
+  font-size: 16px;
+}
