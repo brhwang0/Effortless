@@ -13,7 +13,7 @@ export class UsersComponent implements OnInit {
   ngOnInit() {
   }
 
-  doctors = false;
+  doctors = true;
   patients = false;
   providers = false;
 
