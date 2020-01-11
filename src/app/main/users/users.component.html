@@ -7,15 +7,15 @@
       <button class="tablinks" (click)="switchTab('Providers')">Providers</button>
     </div>
 
-    <div id="Doctors" class="tabcontent">
+    <div id="Doctors" *ngIf = "doctors == true">
       Doctor
     </div>
 
-    <div id="Patients" class="tabcontent">
+    <div id="Patients" *ngIf = "patients == true">
       Patient
     </div>
 
-    <div id="Providers" class="tabcontent">
+    <div id="Providers" *ngIf = "providers == true">
       Provider
     </div>
 
