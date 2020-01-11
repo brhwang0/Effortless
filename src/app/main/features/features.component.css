@@ -1,0 +1,117 @@
+.features-container {
+  display:block;
+  padding: 20px;
+  height: 300px;
+  border-radius: 20px;
+
+  background-color: lightgrey
+}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+#container{
+	width: 1350px;
+	height: 750px; 
+  margin: 0px auto 0px auto;
+  display:block;
+  background-color: lightgrey;
+}
+#header {
+	width: 960px;
+    height: 50px;
+    font-size: 25px;
+	margin: 0px 200px 0px 200px;
+	padding-top: 10px;
+	text-align: center; 
+}
+#title {
+	opacity: .7;
+	font-size: 30px;
+	margin: auto
+}
+#header h1{
+			display: inline-block;
+			width: 200px;
+			height: 20px;
+			text-align: center;
+			color: #5F8D4B;
+			font-weight: bold;
+		}
+#horiz-nav{
+			height: 50px; /*change when photo shop finishes dl */ 
+			margin: 0px auto; 
+		}
+image{
+	width:140px;
+	height:140px 
+}
+#horiz-nav li{
+			display: inline-block;
+		}
+#horiz-nav ul{
+			list-style-type: none; 
+			text-align: center;
+		}
+#horiz-nav a:link, #horiz-nav a:active, #horiz-nav a:visited{
+			color: white;
+			text-align: center;
+			vertical-align: middle;
+			text-decoration: none;
+			margin: 10px;
+		}
+#horiz-nav a:hover{
+			color: #FF530D;
+			text-align: center;
+			vertical-align: middle;
+			text-decoration: none;
+			margin: 10px
+		}
+.topright{
+			float: left;
+			margin: 30px 60px 40px 10px;
+			width: 220px;
+		}
+.topmiddle{
+			float: left;
+			margin: 30px 60px 40px 30px;
+			width: 220px;
+		}
+.topleft{
+			float: left;
+			margin: 30px 60px 40px 30px;
+			width: 220px;
+		}
+.bottomright{
+			float: left;
+			margin: 67px 60px 40px 30px;
+			width: 210px;
+		}
+.bottommiddle{
+			float: left;
+			margin: 67px 60px 40px 30px;
+			width: 210px;
+		}
+.bottomleft{
+			float: left;
+			margin: 67px 60px 40px 30px;
+			width: 210px;
+		}
+#content{
+			width: 1060px;
+			height: 600px;
+			overflow: auto;
+			border-bottom: 0px;
+			margin: 0px 200px 0px 260px
+		}
+#footer{
+			text-align: center;
+            height: 60px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    padding-left: 40px;
+}
