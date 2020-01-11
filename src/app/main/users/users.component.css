@@ -1,0 +1,29 @@
+.users-container {
+  display:block;
+  padding: 20px;
+  height: 300px;
+  border-radius: 20px;
+
+  background-color: lightgrey;
+}
+
+.tab {
+  float:right;
+  background-color: lightgrey;
+}
+
+.tab button {
+  border: none;
+}
+
+.tab button:hover {
+  background-color:#ddd;
+}
+
+.tab button.active {
+  background-color:red;
+}
+
+.tabcontent {
+  display:none;
+}

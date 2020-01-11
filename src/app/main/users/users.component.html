@@ -1,0 +1,24 @@
+<section class="users">
+
+  <div class="users-container">
+    <div class="tab">
+      <button class="tablinks" (click)="switchTab('Doctors')" id="defaultOpen">Doctors</button>
+      <button class="tablinks" (click)="switchTab('Patients')">Patients</button>
+      <button class="tablinks" (click)="switchTab('Providers')">Providers</button>
+    </div>
+
+    <div id="Doctors" *ngIf = "doctors == true">
+      Doctor
+    </div>
+
+    <div id="Patients" *ngIf = "patients == true">
+      Patient
+    </div>
+
+    <div id="Providers" *ngIf = "providers == true">
+      Provider
+    </div>
+
+  </div>
+
+</section>

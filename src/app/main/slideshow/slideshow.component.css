@@ -1,0 +1,51 @@
+.slideshow {
+	position:relative;
+	height: 500px;
+	background-color: #DEF2F1;
+}
+
+.slide-img {
+	height: 100%;
+	width: 70%;
+	float: left;
+}
+
+.slide-img img {
+	width: 100%;
+	height: 100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.slide-caption {
+	width: 30%;
+	float: right;
+}
+
+/* Arrow Styling */
+.arrow {
+  position: absolute;
+  width: 10%;
+  height: 40%;
+	top: 30%;
+	border: none;
+	opacity:0.2;
+}
+
+.arrow.prev {
+	left: 0;
+  transition: 0.2s linear all;
+}
+
+.arrow.next {
+  left: 60%;
+  transition: 0.2s linear all;
+}
+
+.arrow.prev:hover {
+  opacity: 0.5;
+}
+
+.arrow.next:hover {
+  opacity: 0.5;
+}
