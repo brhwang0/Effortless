@@ -3,19 +3,17 @@
 ## Current To-Do List
 
 **Overall Main Page Design**
+
+  Style overall site.
   
   #### Slideshow
-    - Rework slideshow to something similar to the following demo
-    https://onehungrymind.com/angular-animations-intro/
-    - Add fade animation to slideshow.
+    - Fix slideshow animation.
+    - Add automatic transition to slideshow.
     - Add functionability to pause slideshow on mouse hover.
-  #### Info
-    - Add skeleton for information.
-    - Add general information to the site such as goal statement what is Effortless.....
   #### Patient, Doctor, Insurance
-    - Add skeleton for how our app helps patients, doctors, and insurances specifically.
+    - Style tabs.
   #### Features
     - Add skeleton for features.
 
 **Login Page**
-  - Implement workable login page.
+  - Implement working login page.
