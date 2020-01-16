@@ -16,6 +16,9 @@ import { FeaturesComponent } from './main/features/features.component';
 import { StartComponent } from './main/start/start.component';
 import { FooterComponent } from './footer/footer.component';
 
+//Angular Material Imports
+import {MatGridListModule} from '@angular/material/grid-list';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +35,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     AppRoutingModule,
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

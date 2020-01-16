@@ -1,37 +1,3 @@
-.nav {
-	height:80px;
-	background-color:#F7F9FB;
-}
-
-.nav-container {
-	width:90%;
-	margin-right:auto;
-	margin-left:auto;
-	overflow:auto;
-}
-
-#logo {
-	float:left;
-	width:80px;
-	height:80px;
-}
-
-.nav a {
-	float: left;
-	margin-top:40px;
-	margin-left:40px;
-	display: inline;
-	color: black;
-	text-align: center;
-	padding: 10px 20px;
-	text-decoration: none;
-	opacity:0.8;
-}
-
-.nav a:hover {
-  color: grey;
-}
-
-#login {
-	float: right;
+.logo{
+	height: 70%;
 }
