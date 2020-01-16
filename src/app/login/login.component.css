@@ -1,0 +1,22 @@
+.login-box {
+  margin:auto;
+  width:40%;
+  background-color: white;
+  box-shadow: 5px;
+  border-radius: 5px;
+}
+
+.login-text {
+  text-align: center;
+  font-size: 50px;
+  padding: 10px;
+}
+
+.credentials {
+  text-align:center;
+  padding: 20px;
+}
+
+.credentials button {
+  width: 30%;
+}
