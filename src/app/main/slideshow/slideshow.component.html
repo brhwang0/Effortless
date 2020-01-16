@@ -1,20 +1,6 @@
-<section class="slideshow">
-
-  <div class="slide-img" [@slideAnimation]="currentIndex">
-    <ng-template ngFor [ngForOf]="slides" let-slide let-i="index">
-      <img class="slide slide-animation nonDraggableImage"
-        *ngIf="isCurrentSlideIndex(i)"
-        (swiperight)="nextSlide()" (swipeleft)="prevSlide()"
-        [src]="slide.image">
-    </ng-template>
-
-    <button class="arrow prev" (click)="nextSlide()"></button>
-    <button class="arrow next" (click)="prevSlide()"></button>
-
-  </div>
-
-  <div class="slide-caption">
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  </div>
-
-</section>
+<slideshow [height]="'350px'"
+           [autoPlay]="true"
+           [showArrows]="false"
+           [showDots]="true"
+           [imageUrls]="slides">
+</slideshow>

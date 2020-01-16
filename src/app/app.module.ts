@@ -16,8 +16,9 @@ import { FeaturesComponent } from './main/features/features.component';
 import { StartComponent } from './main/start/start.component';
 import { FooterComponent } from './footer/footer.component';
 
-//Angular Material Imports
+import {SlideshowModule} from 'ng-simple-slideshow';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTabsModule,
+    SlideshowModule
   ],
   providers: [],
   bootstrap: [AppComponent]

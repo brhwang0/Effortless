@@ -1,19 +1,12 @@
-<mat-grid-list cols="1" rowHeight="15:1">
-  <mat-grid-tile><img src="./assets/images/Effortless-logo-blue.png" class = "logo"></mat-grid-tile>
-</mat-grid-list>
-
-
-<!--<div class ="nav">
-  <div class="nav-container">
-
-    <img src="./assets/images/Effortless-Logo.png" id="logo">
-    <nav>
-      <a routerLink="/">Home</a>
-      <a routerLink="/">More pages to link to</a>
-      <a routerLink="/login" id="login">Login</a>
-    </nav>
-
-  </div>
-</div>
-
-<hr>-->
+<mat-tab-group mat-align-tabs="center">
+  <mat-tab label="Home">
+    		<app-slideshow></app-slideshow><br>
+    		<app-info></app-info><br>
+    		<app-users></app-users><br>
+    		<app-features></app-features><br>
+    		<app-start></app-start>
+  </mat-tab>
+  <mat-tab label="Page 1">Content 2</mat-tab>
+  <mat-tab label="Page 2">Content 3</mat-tab>
+  <mat-tab label="Log In">Content 3</mat-tab>
+</mat-tab-group>
