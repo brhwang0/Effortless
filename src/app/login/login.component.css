@@ -8,15 +8,24 @@
 
 .login-text {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   padding: 10px;
 }
 
+.signup-text {
+  text-align: center;
+  font-size: 15px;
+}
+
 .credentials {
-  text-align:center;
   padding: 20px;
 }
 
 .credentials button {
   width: 30%;
+}
+
+.forgot-password {
+  padding: 10px;
+  font-size: 10px;
 }
