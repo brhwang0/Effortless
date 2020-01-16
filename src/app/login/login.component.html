@@ -1,9 +1,25 @@
 <app-nav></app-nav>
 
-<body>
-  <div>
-    <h1>  Sign In </h1>
-    <h3> username: Enter username </h3>
-    <h3> password: Enter password </h3>
+<div class=login-box>
+  <div class=login-text>
+    Login
   </div>
-</body>
+
+  <form>
+
+    <div class=credentials>
+      <label for="username"><b>Username / Email </b></label><br><br>
+      <input type="text" required><br><br>
+
+      <label for="password"><b>Password </b></label><br><br>
+      <input type="password" required><br><br>
+      
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox"> Remember me
+      </label>
+    </div>
+
+  </form>
+
+</div>
