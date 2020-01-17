@@ -14,6 +14,8 @@ import { InfoComponent } from './main/info/info.component';
 import { UsersComponent } from './main/users/users.component';
 import { FeaturesComponent } from './main/features/features.component';
 import { StartComponent } from './main/start/start.component';
+import { FooterComponent } from './footer/footer.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { StartComponent } from './main/start/start.component';
     InfoComponent,
     UsersComponent,
     FeaturesComponent,
-    StartComponent
+    StartComponent,
+    FooterComponent,
+    RegisterComponent
   ],
   imports: [
     AppRoutingModule,

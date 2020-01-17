@@ -1,0 +1,10 @@
+.footer-text {
+	text-align: center;
+	font-size: large;
+	margin: 10px;
+}
+
+.footer-link {
+	color: black;
+	text-decoration: none;
+}
