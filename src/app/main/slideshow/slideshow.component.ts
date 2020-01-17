@@ -15,7 +15,7 @@ export class SlideshowComponent implements OnInit {
   }
 
   slides = [
-    {url: 'assets/images/slide-icons.png'},
-    {url: 'assets/images/slide-people.jpg'},
+    {url: 'assets/images/slide-1.jpg'},
+    {url: 'assets/images/slide-2.png'},
   ];
 }

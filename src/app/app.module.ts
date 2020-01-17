@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { Router } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
@@ -15,10 +14,17 @@ import { UsersComponent } from './main/users/users.component';
 import { FeaturesComponent } from './main/features/features.component';
 import { StartComponent } from './main/start/start.component';
 import { FooterComponent } from './footer/footer.component';
+import { LoadingComponent } from './loading/loading.component';
 
 import {SlideshowModule} from 'ng-simple-slideshow';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTabsModule} from '@angular/material/tabs';
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+
+export function playerFactory() {
+  return player;
+}
 
 @NgModule({
   declarations: [
@@ -31,7 +37,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     UsersComponent,
     FeaturesComponent,
     StartComponent,
-    FooterComponent
+    FooterComponent,
+    LoadingComponent
   ],
   imports: [
     AppRoutingModule,
@@ -39,7 +46,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     BrowserAnimationsModule,
     MatGridListModule,
     MatTabsModule,
-    SlideshowModule
+    SlideshowModule,
+    LottieModule.forRoot({ player: playerFactory })
   ],
   providers: [],
   bootstrap: [AppComponent]

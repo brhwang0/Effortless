@@ -1,9 +1,24 @@
-<app-nav></app-nav>
-
-<body>
-  <div>
-    <h1>  Sign In </h1>
-    <h3> username: Enter username </h3>
-    <h3> password: Enter password </h3>
+<div class=login-box>
+  <div class=login-text>
+    Login
   </div>
-</body>
+
+  <div class=signup-text>
+    Don't have an account? <a routerLink="/">Sign up</a>
+  </div>
+
+  <form>
+
+    <div class=credentials>
+      <label for="username"><b>Username </b></label><br><br>
+      <input type="text" required><br><br>
+
+      <label for="password"><b>Password </b></label><br><br>
+      <input type="password" required> <a routerLink="/" class="forgot-password">Forgot password?</a><br><br>
+
+      <button type="submit">Login</button>
+    </div>
+
+  </form>
+
+</div>
