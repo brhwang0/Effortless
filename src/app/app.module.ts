@@ -15,6 +15,7 @@ import { UsersComponent } from './main/users/users.component';
 import { FeaturesComponent } from './main/features/features.component';
 import { StartComponent } from './main/start/start.component';
 import { FooterComponent } from './footer/footer.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FooterComponent } from './footer/footer.component';
     UsersComponent,
     FeaturesComponent,
     StartComponent,
-    FooterComponent
+    FooterComponent,
+    RegisterComponent
   ],
   imports: [
     AppRoutingModule,
