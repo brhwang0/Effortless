@@ -29,3 +29,17 @@
   padding: 10px;
   font-size: 10px;
 }
+
+.tooltip {
+  opacity:0;
+  border:solid;
+  font-size: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  transition: opacity 0.5s;
+}
+
+input:focus + .tooltip {
+  opacity:1;
+}
