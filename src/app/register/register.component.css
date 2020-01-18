@@ -31,13 +31,25 @@
 }
 
 .tooltip {
-  opacity:0;
-  border:solid;
-  font-size: 10px;
+
+  position: relative;
+  top: -30px;
+
+  float: right;
+
+  border: solid;
+  border-color: blue;
+  background-color: lightgrey;
+  border-width: 2px;
   border-radius: 5px;
-  margin: 10px;
-  padding: 10px;
+
+  padding: 2px;
+
+  font-size: 10px;
+
+  opacity:0;
   transition: opacity 0.5s;
+
 }
 
 input:focus + .tooltip {
