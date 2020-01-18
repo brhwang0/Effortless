@@ -16,19 +16,9 @@ export class LoadingComponent implements OnInit {
     margin: '0 auto',
   };
 
-  finished =  false;
-
-  finishAnimation(){
-    this.finished = true;
-  }
-
   constructor() {
   }
 
   ngOnInit() {
-    /*setTimeout(() => {
-      this.finishAnimation();
-    }, 1700);*/
   }
-
 }

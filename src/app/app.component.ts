@@ -8,4 +8,16 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Effortless';
+
+  finished =  false;
+
+  finishAnimation(){
+    this.finished = true;
+  }
+
+  ngOnInit() {
+    setTimeout(() => {
+      this.finishAnimation();
+    }, 1700);
+  }S
 }

@@ -1,2 +1,3 @@
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div *ngIf="finished == false"><app-loading></app-loading></div>
+<div *ngIf="finished == true"><router-outlet></router-outlet></div>
+<!--<app-footer></app-footer>-->
