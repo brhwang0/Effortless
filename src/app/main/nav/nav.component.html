@@ -1,4 +1,4 @@
-<mat-grid-list cols="9" rowHeight="50px" style="font-size: 13px; color: #999999;">
+<mat-grid-list cols="9" rowHeight="50px" class="tabs">
   <mat-grid-tile></mat-grid-tile><mat-grid-tile></mat-grid-tile>
   <mat-grid-tile *ngIf = "home == true" class = "current">
     Home
@@ -14,7 +14,7 @@
   </mat-grid-tile><mat-grid-tile (click) = "tab('providers')" *ngIf = "providers == false">Providers</mat-grid-tile>
   <mat-grid-tile *ngIf = "logIn == true" class = "current">
     Log In
-  </mat-grid-tile><mat-grid-tile (click) = "tab('logIn')" *ngIf = "logIn == false">Log In</mat-grid-tile>
+  </mat-grid-tile><mat-grid-tile (click) = "tab('logIn')" *ngIf = "logIn == false" [routerLink]="['/login']">Log In</mat-grid-tile>
   <mat-grid-tile></mat-grid-tile><mat-grid-tile></mat-grid-tile>
 </mat-grid-list>
 

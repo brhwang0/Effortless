@@ -2,3 +2,9 @@
   width: 60%;
   float: left;
 }
+.text{
+  background-color: #166199;
+  height: 350px;
+  color: white;
+  font-size: 13px;
+}

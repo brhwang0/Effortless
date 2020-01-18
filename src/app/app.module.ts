@@ -15,12 +15,15 @@ import { FeaturesComponent } from './main/features/features.component';
 import { StartComponent } from './main/start/start.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoadingComponent } from './loading/loading.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 import {SlideshowModule} from 'ng-simple-slideshow';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTabsModule} from '@angular/material/tabs';
 import { LottieModule } from 'ngx-lottie';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import player from 'lottie-web';
+
 
 export function playerFactory() {
   return player;
@@ -38,7 +41,8 @@ export function playerFactory() {
     FeaturesComponent,
     StartComponent,
     FooterComponent,
-    LoadingComponent
+    LoadingComponent,
+    DashboardComponent
   ],
   imports: [
     AppRoutingModule,
@@ -47,7 +51,8 @@ export function playerFactory() {
     MatGridListModule,
     MatTabsModule,
     SlideshowModule,
-    LottieModule.forRoot({ player: playerFactory })
+    LottieModule.forRoot({ player: playerFactory }),
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
