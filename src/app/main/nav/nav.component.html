@@ -1,15 +1,27 @@
-<mat-tab-group mat-align-tabs="center">
-  <mat-tab label="Home">
-		<br><app-slideshow></app-slideshow><br>
-		<!--<app-info></app-info><br>
-		<app-users></app-users><br>
-		<app-features></app-features><br>
-		<app-start></app-start>-->
-  </mat-tab>
-  <mat-tab label="Doctors">Doctors</mat-tab>
-  <mat-tab label="Patients">Patients</mat-tab>
-  <mat-tab label="Providers">Providers</mat-tab>
-  <mat-tab label="Log In">
-    <app-login></app-login>
-  </mat-tab>
-</mat-tab-group>
+<mat-grid-list cols="9" rowHeight="50px" style="font-size: 13px; color: #999999;">
+  <mat-grid-tile></mat-grid-tile><mat-grid-tile></mat-grid-tile>
+  <mat-grid-tile *ngIf = "home == true" class = "current">
+    Home
+  </mat-grid-tile><mat-grid-tile (click) = "tab('home')" *ngIf = "home == false">Home</mat-grid-tile>
+  <mat-grid-tile *ngIf = "doctors == true" class = "current">
+    Doctors
+  </mat-grid-tile><mat-grid-tile (click) = "tab('doctors')" *ngIf = "doctors == false">Doctors</mat-grid-tile>
+  <mat-grid-tile *ngIf = "patients == true" class = "current">
+    Patients
+  </mat-grid-tile><mat-grid-tile (click) = "tab('patients')" *ngIf = "patients == false">Patients</mat-grid-tile>
+  <mat-grid-tile *ngIf = "providers == true" class = "current">
+    Providers
+  </mat-grid-tile><mat-grid-tile (click) = "tab('providers')" *ngIf = "providers == false">Providers</mat-grid-tile>
+  <mat-grid-tile *ngIf = "logIn == true" class = "current">
+    Log In
+  </mat-grid-tile><mat-grid-tile (click) = "tab('logIn')" *ngIf = "logIn == false">Log In</mat-grid-tile>
+  <mat-grid-tile></mat-grid-tile><mat-grid-tile></mat-grid-tile>
+</mat-grid-list>
+
+
+<div *ngIf="home == true">
+  <br><app-slideshow></app-slideshow><br>
+</div>
+<div *ngIf="logIn == true">
+  <br><app-login></app-login><br>
+</div>
