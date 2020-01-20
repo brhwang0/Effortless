@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, NgZone} from '@angular/core';
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
 
@@ -16,7 +16,16 @@ export class LoadingComponent implements OnInit {
     margin: '0 auto',
   };
 
-  constructor() {
+  private animationItem: AnimationItem;
+
+  constructor(private ngZone: NgZone) {}
+
+  animationCreated(animationItem: AnimationItem): void {
+    this.animationItem = animationItem;
+  }
+
+  stop(): void {
+    this.ngZone.runOutsideAngular(() => this.animationItem.stop());
   }
 
   ngOnInit() {
