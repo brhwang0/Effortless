@@ -4,16 +4,18 @@
 
 **Overall Main Page Design**
 
-  Style overall site.
+  Merge new homepage design.
   
-  #### Slideshow
-    - Fix slideshow animation.
-    - Add automatic transition to slideshow.
-    - Add functionability to pause slideshow on mouse hover.
   #### Patient, Doctor, Insurance
     - Style tabs.
   #### Features
     - Add skeleton for features.
 
 **Login Page**
-  - Implement working login page.
+  - Route login page to dashboard.
+  
+**Register Page**
+  - Add logic to password registration.
+ 
+**Dashboard**
+  - Add skeleton for dashboard (tabbing UI).
