@@ -24,7 +24,7 @@
 	text-align: center;
 }
 
-#header h1{
+#header h1 {
   display: inline-block;
   width: 200px;
 	height: 20px;
@@ -33,7 +33,7 @@
 	font-weight: bold;
 }
 
-#horiz-nav{
+#horiz-nav {
 	height: 50px; /*change when photo shop finishes dl */
   margin: 0px auto;
 }
@@ -43,16 +43,16 @@ image {
 	height:140px
 }
 
-#horiz-nav li{
+#horiz-nav li {
 	display: inline-block;
 }
 
-#horiz-nav ul{
+#horiz-nav ul {
   list-style-type: none;
 	text-align: center;
 }
 
-#horiz-nav a:link, #horiz-nav a:active, #horiz-nav a:visited{
+#horiz-nav a:link, #horiz-nav a:active, #horiz-nav a:visited {
   color: white;
   text-align: center;
   vertical-align: middle;
@@ -60,7 +60,7 @@ image {
   margin: 10px;
 }
 
-#horiz-nav a:hover{
+#horiz-nav a:hover {
 	color: #FF530D;
 	text-align: center;
 	vertical-align: middle;
